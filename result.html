@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Finance Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="printCont">
+        <h1>Small Finance Company</h1>
+        <h2>First Name : <span id="firstName"></span></h2>
+        <h2>Last Name :<span id="lastName"></span></h2>
+        <h2>ID Number :<span id="idFirstNum"></span><span id="idNum"></span></h2>
+        <h2>Berth Day :<span id="dayOfBirth"></span><span id="monthOfBirth"></span><span id="berthDay"></span></h2>
+        <h2>Cell Number :<span id="cellNumFirst"></span><span id="cellNum"></span></h2>
+        <h2>Email :<span id="email"></span></h2>
+        <h2>Dibet Value :<span id="monyAmount"></span></h2>
+        <h2>Dibet Type :<span id="dibetType"></span></h2>
+        <h2>Pay years :<span id="payYears"></span></h2>
+        <h2>Pay methoud :<span id="payMethoud"></span></h2>
+    </div>
+    <script>
+        document.getElementById("firstName").innerHTML = localStorage.getItem("passFirstValue");
+        document.getElementById("lastName").innerHTML = localStorage.getItem("passLastValue");
+        document.getElementById("idNum").innerHTML = localStorage.getItem("passIdNum");
+        document.getElementById("cellNum").innerHTML = localStorage.getItem("passCellNum");
+        document.getElementById("cellNumFirst").innerHTML = localStorage.getItem("passCellNumFirst");
+        document.getElementById("berthDay").innerHTML = localStorage.getItem("passBerthDay");
+        document.getElementById("email").innerHTML = localStorage.getItem("passPerEmail");
+        document.getElementById("monyAmount").innerHTML = localStorage.getItem("passMonyAmount");
+        document.getElementById("dibetType").innerHTML = localStorage.getItem("passDibetType");
+        document.getElementById("payYears").innerHTML = localStorage.getItem("passPayYears");
+        document.getElementById("payMethoud").innerHTML = localStorage.getItem("passPayMethoud");
+        document.getElementById("idFirstNum").innerHTML = localStorage.getItem("passIdFirstNum");
+        document.getElementById("dayOfBirth").innerHTML = localStorage.getItem("passDayOFBirth");
+        document.getElementById("monthOfBirth").innerHTML = localStorage.getItem("passmonthOfBirth");
+    </script>
+</body>
+</html>
